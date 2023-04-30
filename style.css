@@ -1,0 +1,235 @@
+@font-face {
+    font-family: Inter-Black;
+    src: url('Inter-Black.woff');
+}
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url('Inter-Regular.woff');
+}
+
+*{
+    font-size: 25px;
+    font-family: 'Inter-Regular';
+    color: black;
+    margin: 0;
+    padding: 0;
+    /*outline: 1px solid black;*/
+}
+
+h1{
+    margin: 40px;
+    text-align: center;
+    animation: transitionIn-Y-over 0.5s;
+}
+
+.emphasis{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.wt{
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+
+div.center-div{
+    background-color: white;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    width: auto;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    animation: transitionIn-Y-over 0.5s;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 80px 60px rgba(0, 0, 0, 0.5);
+}
+
+div.center-div > *{
+    margin: 10px;
+}
+
+div.div-inline{
+    display: flex;
+    justify-content: center;
+}
+
+div.space-even{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div.space-bet{
+    display: flex;
+    justify-content: space-between;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.center-div > p{
+    width: 80%;
+    text-align: center;
+    align-self: center;
+}
+
+input{
+    color: white;
+    margin: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+/*input:-webkit-autofill { 
+    -webkit-background-clip: text;
+}*/
+
+input[type] {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    padding: 2px;
+    transition: 0.3s;
+}
+
+
+
+::placeholder {
+    color: rgb(216, 216, 216);
+    opacity: 1;
+  }
+  
+label{
+    color: white;
+    margin: 10px;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(school.jpg);
+    /*background: linear-gradient(111deg, 
+    rgba(25, 21, 106, 0.5) 0%, 
+    rgba(111,111,208,0.5) 50%,    
+    rgba(0,212,255,0.5));*/
+}
+
+button{
+    border: none;
+    font-size: 20px;
+    padding: 4px;
+    margin: 10px;
+}
+
+button.default-btn{
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button.default-btn:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
+}
+
+button#registerBtnID:hover
+{
+    background-color: rgba(102, 224, 255, 0.8);
+    transition: 0.3s;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+body.dash{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction:row;
+}
+
+p.error{
+    text-align: center;
+    align-self: center;
+    margin: 0px 20px;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav.def-nav{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(61, 145, 255);
+}
+
+section.def-dash{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    background-color: rgb(255, 255, 255,0.75);
+}
+
+@keyframes transitionIn-X{
+    from {
+            opacity: 0;
+            transform: translateX(-10px);
+
+    }
+
+    to {
+            opacity: 1;
+            transform: translateX(0);
+    }
+}
+    
+
+
+@keyframes transitionIn-Y-over{
+    from {
+            opacity: 0;
+            transform: translateY(-10px);
+
+    }
+
+    to {
+            opacity: 1;
+            transform: translateY(0);
+    }
+}
+    
+@keyframes transitionIn-Y-bottom{
+    from {
+            opacity: 0;
+            transform: translateY(30px);
+
+    }
+
+    to {
+            opacity: 1;
+            transform: translateY(0);
+    }
+}
