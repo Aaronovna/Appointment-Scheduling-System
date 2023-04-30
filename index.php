@@ -2,6 +2,16 @@
     ini_set("display_errors", "1");
     error_reporting(E_ALL);
 
+    session_start();
+    $_SESSION["email"]="";
+
+    include("connection.php");
+
+    if($_POST)
+    {
+        
+    }
+    /*
     $email = $password = "";
     $emailErr = $passwordErr = "";
 
@@ -56,6 +66,7 @@
 		  $emailErr = "Email is not registered";
 		}
    }
+   */
 
 ?>
 

@@ -1,6 +1,16 @@
+@font-face {
+    font-family: Inter-Black;
+    src: url('Inter-Black.woff');
+}
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url('Inter-Regular.woff');
+}
+
 *{
     font-size: 25px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Inter-Regular';
     color: black;
     margin: 0;
     padding: 0;
@@ -150,6 +160,14 @@ body{
     justify-content:space-evenly;
 }
 
+body.dash{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction:row;
+}
+
 p.error{
     text-align: center;
     align-self: center;
@@ -157,6 +175,22 @@ p.error{
     color: red;
     font-size: 20px;
     font-weight: bold;
+}
+
+nav.def-nav{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(61, 145, 255);
+}
+
+section.def-dash{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    background-color: rgb(255, 255, 255,0.75);
 }
 
 @keyframes transitionIn-X{
