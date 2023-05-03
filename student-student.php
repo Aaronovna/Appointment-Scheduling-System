@@ -42,7 +42,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Dashboard</title>
+        <title>Home</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width , initial-scale=1.0">
         <link rel="stylesheet"  href="style.css">
@@ -64,13 +64,13 @@
                 <p>Home</p>
             </button>
 
-            <button onclick="location.href = 'student-student.php';" class="dash-button">
-                <span class="material-symbols-outlined md-36">school</span>
+            <button id="active" onclick="location.href = 'student-student.php';" class="dash-button">
+                <span id="active-icon" class="material-symbols-outlined md-36">school</span>
                 <p>Student</p>
             </button>
 
-            <button id="active" onclick="location.href = 'student-teacher.php';" class="dash-button">
-                <span id="active-icon" class="material-symbols-outlined md-36">account_balance</span>
+            <button onclick="location.href = 'student-teacher.php';" class="dash-button">
+                <span class="material-symbols-outlined md-36">account_balance</span>
                 <p>Professor</p>
             </button>
             <button onclick="location.href = 'log-out.php';" class="default-btn">Log Out</button>
@@ -78,10 +78,10 @@
         </nav>
         <section class="def-dash">
             <div>
-                <h2>PROFESSOR</h2>
+                <h2>STUDENT</h2>
                 <hr>
                 <br>
-                <h2>Professor List</h2>
+                <h2>Concerns</h2>
                 <br>
                 
 
