@@ -76,18 +76,119 @@
             <button onclick="location.href = 'log-out.php';" class="default-btn">Log Out</button>
             
         </nav>
+
         <section class="def-dash">
-            <div>
+            <div class="dash-cont">
                 <h2>STUDENT</h2>
                 <hr>
                 <br>
-                <h2>Concerns</h2>
+                <h2>Appointment</h2>
                 <br>
-                
+                <div class="dash-cont-appt">
+                    <button onclick="location.href = '#pop-payment';" class="appt-button">
+                        <span class="material-symbols-outlined">local_atm</span>
+                        <p>Balance</p>
+                    </button>
 
+                    <button onclick="location.href = '#pop-book';" class="appt-button">
+                        <span class="material-symbols-outlined">library_books</span>
+                        <p>Book</p>
+                    </button>
+
+                    <button onclick="location.href = '#pop-appt';" class="appt-button">
+                        <span class="material-symbols-outlined">date_range</span>
+                        <p>Appoinment</p>
+                    </button>
+                </div>
             </div>
 
-           
+            <div id="pop-payment" class="overlay">
+                <div class="popup">
+                    <h4>Balance</h4>
+                    <a class="close" href="#">
+                        <span id="active-icon" class="material-symbols-outlined md-24">close</span>
+                    </a>
+                    <div class="content">
+                        <p>Pay Balance</p>
+                        <form action="">
+                            <p>Date:</p>
+                            <input type="date">
+                            <p>Time:</p>
+                            <select name="pay-balance" id="pay-balance">
+                                <option value="08:00">08:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="12:00">12:00 NN</option>
+                                <option value="14:00">02:00 PM</option>
+                                <option value="16:00">04:00 PM</option>
+                            </select>
+
+                            <button class="default-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pop-book" class="overlay">
+                <div class="popup">
+                    <h4>Book</h4>
+                    <a class="close" href="#">
+                        <span id="active-icon" class="material-symbols-outlined md-24">close</span>
+                    </a>
+                    <div class="content">
+                        <p>Pay Book</p>
+                        <form action="">
+                            <p>Date:</p>
+                            <input type="date">
+                            <p>Time:</p>
+                            <select name="pay-balance" id="pay-balance">
+                                <option value="08:00">08:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="12:00">12:00 NN</option>
+                                <option value="14:00">02:00 PM</option>
+                                <option value="16:00">04:00 PM</option>
+                            </select>
+
+                            <button class="default-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pop-appt" class="overlay">
+                <div class="popup">
+                    <h4>Appointment</h4>
+                    <a class="close" href="#">
+                        <span id="active-icon" class="material-symbols-outlined md-24">close</span>
+                    </a>
+                    <div class="content">
+                        <p>Schedule an appointment</p>
+                        <form action="">
+                            <p>Date:</p>
+                            <input type="date">
+                            <p>Time:</p>
+                            <select name="pay-balance" id="pay-balance">
+                                <option value="08:00">08:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="12:00">12:00 NN</option>
+                                <option value="14:00">02:00 PM</option>
+                                <option value="16:00">04:00 PM</option>
+                            </select>
+                            <p>Department:</p>
+                            <select name="department" id="department">
+                                <option value="0">Admissions Office</option>
+                                <option value="1">Registrar's Office</option>
+                                <option value="2">Financial Aid Office</option>
+                                <option value="3">Student Affairs Office</option>
+                                <option value="4">Academic Affairs Office</option>
+                                <option value="5">Career Services Office </option>
+                                <option value="6">International Student Services Office</option>
+                                <option value="7">Office of the Dean</option>
+                            </select>
+                            <button class="default-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
     </body>
 

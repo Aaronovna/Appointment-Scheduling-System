@@ -77,7 +77,7 @@
             
         </nav>
         <section class="def-dash">
-            <div>
+            <div class="dash-cont">
                 <h2>PROFESSOR</h2>
                 <hr>
                 <br>

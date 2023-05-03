@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 29, 2023 at 10:35 AM
+-- Generation Time: May 03, 2023 at 01:30 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -24,6 +24,20 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `appointments`
+--
+
+CREATE TABLE `appointments` (
+  `appointment_ID` int(8) NOT NULL,
+  `student_ID` int(11) NOT NULL,
+  `concern` varchar(100) NOT NULL,
+  `description` varchar(1000) NOT NULL,
+  `date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `student_account`
 --
 
@@ -35,20 +49,28 @@ CREATE TABLE `student_account` (
   `fname` varchar(20) NOT NULL,
   `lname` varchar(20) NOT NULL,
   `address` varchar(100) NOT NULL,
-  `birthdate` date NOT NULL
+  `birthdate` date NOT NULL,
+  `appt_count` int(10) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `student_account`
 --
 
-INSERT INTO `student_account` (`student_ID`, `email`, `password`, `student_number`, `fname`, `lname`, `address`, `birthdate`) VALUES
-(1000, 'pyre123@gmail.com', 'qwerty', 21016980, 'Pyre', 'Aron', 'Caloocan City', '2001-10-31'),
-(1001, 'Aaronovna@gmail.com', 'qwerty', 32127091, 'Aaronovna', 'Scitus', 'Quezon City', '2001-01-13');
+INSERT INTO `student_account` (`student_ID`, `email`, `password`, `student_number`, `fname`, `lname`, `address`, `birthdate`, `appt_count`) VALUES
+(1000, 'pyre123@gmail.com', 'qwerty', 21016980, 'Pyre', 'Aron', 'Caloocan City', '2001-10-31', 0),
+(1001, 'Aaronovna@gmail.com', 'qwerty', 32127091, 'Aaronovna', 'Scitus', 'Quezon City', '2001-01-13', 0),
+(1002, 'zeng24@gmail.com', '3242zeng', 21121690, 'zeng', 'chi', 'dolmar 2', '2002-03-24', 0);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `appointments`
+--
+ALTER TABLE `appointments`
+  ADD PRIMARY KEY (`appointment_ID`);
 
 --
 -- Indexes for table `student_account`
@@ -64,7 +86,7 @@ ALTER TABLE `student_account`
 -- AUTO_INCREMENT for table `student_account`
 --
 ALTER TABLE `student_account`
-  MODIFY `student_ID` mediumint(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1002;
+  MODIFY `student_ID` mediumint(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1003;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

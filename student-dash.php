@@ -77,7 +77,7 @@
             
         </nav>
         <section class="def-dash">
-            <div>
+            <div class="dash-cont">
                 <h2>HOME</h2>
                 <hr>
                 <br>
@@ -87,16 +87,19 @@
                     <thead>
                         <tr>
                             <th class="table-headin">
-                                ID
+                                APPOINTMENT CODE
                             </th>
                             <th class="table-headin">
-                                Concern
+                                TYPE
                             </th>
                             <th class="table-headin">
-                                Date
+                                DATE
                             </th>
                             <th class="table-headin">
-                                Events 
+                                TIME
+                            </th>
+                            <th class="table-headin">
+                                DESCRIPTION
                             </tr>
 
                     </thead>
@@ -115,7 +118,7 @@
                             <p>fuck this shit</p>
                         </div>
                     </div>
-                </div>
+            </div>
         </section>
     </body>
 
