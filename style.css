@@ -17,8 +17,6 @@
     /*outline: 1px solid black;*/
 }
 
-<<<<<<< HEAD
-=======
 .material-symbols-outlined {
     font-variation-settings:
       'FILL' 0,
@@ -39,7 +37,6 @@
 .material-symbols-outlined.md-24 { font-size: 24px; }
 .material-symbols-outlined.md-36 { font-size: 36px; }
 .material-symbols-outlined.md-48 { font-size: 48px; }
->>>>>>> session
 h1{
     margin: 40px;
     text-align: center;
@@ -200,24 +197,6 @@ p.error{
     font-weight: bold;
 }
 
-<<<<<<< HEAD
-nav.def-nav{
-    width: 20%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(61, 145, 255);
-}
-
-section.def-dash{
-    width: 80%;
-    height: 100%;
-    display: flex;
-    background-color: rgb(255, 255, 255,0.75);
-}
-
-=======
 p.success{
     text-align: center;
     align-self: center;
@@ -312,7 +291,6 @@ th{
 }
 
 
->>>>>>> session
 @keyframes transitionIn-X{
     from {
             opacity: 0;
@@ -325,11 +303,6 @@ th{
             transform: translateX(0);
     }
 }
-<<<<<<< HEAD
-    
-
-=======
->>>>>>> session
 
 @keyframes transitionIn-Y-over{
     from {

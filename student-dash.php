@@ -1,8 +1,4 @@
 <?php
-<<<<<<< HEAD
-
-
-=======
     ini_set("display_errors", "1");
     error_reporting(E_ALL);
 
@@ -40,7 +36,6 @@
     $fname=$userfetch["fname"];
     $lname=$userfetch["lname"];
     $studentnum=$userfetch["student_number"];
->>>>>>> session
 ?>
 
 
@@ -51,23 +46,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width , initial-scale=1.0">
         <link rel="stylesheet"  href="style.css">
-<<<<<<< HEAD
-=======
         <link rel="stylesheet"  href="popup.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
->>>>>>> session
     </head>
 
     <body class="dash">
         <nav class="def-nav">
-<<<<<<< HEAD
-            <p class="emphasis wt">Dashboard</p>
-            <button onclick="location.href = 'log-out.php';" class="default-btn">Log Out</button>
-        </nav>
-        <section class="def-dash">
-
-
-=======
             <br>
             <div class="user-profile"><img class="user-profile" src="default-profile.jpg"></div>
             <br>
@@ -132,7 +116,6 @@
                         </div>
                     </div>
                 </div>
->>>>>>> session
         </section>
     </body>
 
