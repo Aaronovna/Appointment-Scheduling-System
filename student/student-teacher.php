@@ -85,7 +85,7 @@
         <section class="def-dash">
             <div class="dash-cont">
                 <div class="dash-header">
-                    <h2>HOME</h2>
+                    <h2>PROFESSOR</h2>
                     <span class="dash-header">
                         <p><?php echo $today?></p>
                         <span class="material-symbols-outlined md-36">calendar_month</span>
