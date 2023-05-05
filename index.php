@@ -2,24 +2,15 @@
     ini_set("display_errors", "1");
     error_reporting(E_ALL);
 
-<<<<<<< HEAD
-    session_start();
-    $_SESSION["email"]="";
-=======
     $message='';
 
     session_start();
     $_SESSION["user"]="";
->>>>>>> session
 
     include("connection.php");
 
     if($_POST)
     {
-<<<<<<< HEAD
-        
-    }
-=======
         $email=$_POST['email'];
         $password=$_POST['password'];
 
@@ -34,7 +25,7 @@
             if ($checker->num_rows==1)
             {
                 $_SESSION['user']=$email;
-                header('location: student-dash.php');
+                header('location: student/student-dash.php');
             }
             else
             {
@@ -56,7 +47,6 @@
         $message="You have been logged out successfully.";
     }
 
->>>>>>> session
     /*
     $email = $password = "";
     $emailErr = $passwordErr = "";
@@ -122,35 +112,27 @@
         <title>Log In</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width , initial-scale=1.0">
-        <link rel="stylesheet"  href="style.css">
+        <link rel="stylesheet"  href="styles/global.css">
     </head>
 
     <body>
-        <h1 class="emphasis wt">Appointment Scheduling System</h1>
+        <h1 class="emphasis wt index">Appointment Scheduling System</h1>
         
         <div class="center-div">
             <p class="emphasis wt">Log In</p>
-<<<<<<< HEAD
-            <span> <p class="error"><?php echo $emailErr;?> </p> </span>
-            <span> <p class="error"><?php echo $passwordErr;?> </p> </span>
-=======
             <p class="error"><?php echo $error ?></p>
             
             <!-- <span> <p class="error"><?php echo $emailErr;?> </p> </span> -->
             <!-- <span> <p class="error"><?php echo $passwordErr;?> </p> </span> -->
 
->>>>>>> session
             <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                 <input  type="email" name="email" placeholder="Email" title="Email is required">
                 <input  type="password" name="password" placeholder="password" title="Password is required">
                 <button class="default-btn">Log In</button>
             </form>
-<<<<<<< HEAD
-=======
 
             <p class="success"><?php echo $message ?></p>
 
->>>>>>> session
             <div class="div-inline">
                 <button id="forgotBtnID" onclick="location.href = 'forgot.php';" class="default-btn">Forgot Password</button>
                 <button id="registerBtnID" onclick="location.href = 'register.php';" class="default-btn">Register</button>
