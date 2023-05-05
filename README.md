@@ -1,8 +1,5 @@
 # PHP Appointment Scheduling System
 
-<<<<<<< HEAD
-ass_db is the name of the database.
-=======
 This is a PHP project that consists of a student dashboard and appointment system. The user can login and view their personal information, make appointments, and view their upcoming appointments.
 
 ## Functionality
