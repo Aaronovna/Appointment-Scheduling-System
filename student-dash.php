@@ -89,38 +89,88 @@
                             <th class="table-headin">
                                 APPOINTMENT CODE
                             </th>
+
                             <th class="table-headin">
                                 TYPE
                             </th>
+
+                            <th class="table-headin">
+                                CONCERN
+                            </th>
+
+                            <th class="table-headin">
+                                DESCRIPTION
+                            </th>
+
                             <th class="table-headin">
                                 DATE
                             </th>
+
                             <th class="table-headin">
                                 TIME
                             </th>
-                            <th class="table-headin">
-                                DESCRIPTION
-                            </tr>
+
 
                     </thead>
+                    <tbody>
+                        <?php
+                                include("connection.php");
+                                $sqlmain= "select * from general_appointment where student_ID = '$studentnum'";
+
+                                $result= $connect_db->query($sqlmain);
+
+                                if($result->num_rows==0)
+                                {
+                                    echo '
+                                    <p> no found </p>
+                                    ';
+                                    
+                                }
+                                else
+                                {
+                                    for ( $x=0; $x<$result->num_rows;$x++)
+                                    {
+                                        $row = $result->fetch_assoc();
+                                        $a1 = $row["appointment_ID"];
+                                        $a2 = $row["type"];
+                                        $a3 = $row["concern"];
+                                        $a4 = $row["description"];
+                                        $a5 = $row["date"];
+                                        $a6 = $row["time"];
+                                    
+                                        echo '<tr>
+                                            <td> &nbsp;'.
+                                            substr($a1,0,8)
+                                            .'</td>
+                                            <td>
+                                            '.substr($a2,0,1).'
+                                            </td>
+                                            <td>
+                                                '.substr($a3,0,20).'
+                                            </td>
+                                            <td>
+                                            '.substr($a4,0,20).'
+                                            </td>
+                                            <td>
+                                            '.substr($a5,0).'
+                                            </td>
+                                            <td>
+                                            '.substr($a6,0).'
+                                            </td>
+                                            </tr>';
+                                    
+                                    }
+                                }
+                                 
+                            ?>
+ 
+                    </tbody>
+
+                    
                 </table>
-                <button onclick="location.href = '#sample';" class="default-btn">CLICK</button>
+                
 
-            </div>
-
-            <div id="sample" class="overlay">
-                    <div class="popup">
-                        <h4>fucking pop up</h4>
-                        <a class="close" href="#">
-                            <span id="active-icon" class="material-symbols-outlined md-24">close</span>
-                        </a>
-                        <div class="content">
-                            <p>fuck this shit</p>
-                        </div>
-                    </div>
             </div>
         </section>
     </body>
-
-
 </html>

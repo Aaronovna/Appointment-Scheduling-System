@@ -110,19 +110,48 @@
                     </a>
                     <div class="content">
                         <p>Pay Balance</p>
-                        <form action="">
-                            <p>Date:</p>
-                            <input type="date">
-                            <p>Time:</p>
-                            <select name="pay-balance" id="pay-balance">
-                                <option value="08:00">08:00 AM</option>
-                                <option value="10:00">10:00 AM</option>
-                                <option value="12:00">12:00 NN</option>
-                                <option value="14:00">02:00 PM</option>
-                                <option value="16:00">04:00 PM</option>
-                            </select>
+                        <?php
 
-                            <button class="default-btn">Submit</button>
+                            include("connection.php");
+
+                            $date = $time = $appointment_ID = $student_ID = $concern = $type = $description = "";
+                            date_default_timezone_set('Asia/Manila');
+                            $today = date('Y-m-d');
+
+                            if(isset($_POST["pay-balance-form"]))
+                            {
+                                $date = $_POST["date"];
+                                $time = $_POST["time"];
+                                $appointment_ID = $_POST["appointment_ID"];
+                                $student_ID = $_POST["student_ID"];
+                                $concern = $_POST["concern"];
+                                $description = $_POST["concern"];
+                                $type = $_POST["type"];
+                                $student_ID = $studentnum;
+                                $appointment_ID = generateRandomNumber();
+
+                                $query = "INSERT INTO general_appointment (appointment_ID, student_ID, type, concern, description, date, time) 
+                                    VALUES('$appointment_ID', '$student_ID', '$type', '$concern', '$concern', '$date', '$time')";
+
+                                $insert_query = mysqli_query($connect_db, $query);
+                                echo "<script>window.location.href = 'student-student.php'</script>";
+                            }
+                            
+                        ?>
+                        <form name="pay-balance-form" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                            <p>Date:</p>
+                            <input type="date" name="date" id="date" value="<?php echo $today;?>">
+                            <p>Time:</p>
+                            <select name="time" id="time">
+                                <option value="08:00:00">08:00 AM</option>
+                                <option value="10:00:00">10:00 AM</option>
+                                <option value="12:00:00">12:00 NN</option>
+                                <option value="14:00:00">02:00 PM</option>
+                                <option value="16:00:00">04:00 PM</option>
+                            </select>
+                            <input type="hidden" id="concern" name="concern" value="Pay Balance">
+                            <input type="hidden" id="type" name="type" value="1">
+                            <button name="pay-balance-form" class="default-btn">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -135,20 +164,49 @@
                         <span id="active-icon" class="material-symbols-outlined md-24">close</span>
                     </a>
                     <div class="content">
-                        <p>Pay Book</p>
-                        <form action="">
-                            <p>Date:</p>
-                            <input type="date">
-                            <p>Time:</p>
-                            <select name="pay-balance" id="pay-balance">
-                                <option value="08:00">08:00 AM</option>
-                                <option value="10:00">10:00 AM</option>
-                                <option value="12:00">12:00 NN</option>
-                                <option value="14:00">02:00 PM</option>
-                                <option value="16:00">04:00 PM</option>
-                            </select>
+                        <p>Avail Book</p>
+                        <?php
 
-                            <button class="default-btn">Submit</button>
+                            include("connection.php");
+
+                            $date = $time = $appointment_ID = $student_ID = $concern = $type = $description = "";
+                            date_default_timezone_set('Asia/Manila');
+                            $today = date('Y-m-d');
+
+                            if(isset($_POST["avail-book"]))
+                            {
+                                $date = $_POST["date"];
+                                $time = $_POST["time"];
+                                $appointment_ID = $_POST["appointment_ID"];
+                                $student_ID = $_POST["student_ID"];
+                                $concern = $_POST["concern"];
+                                $description = $_POST["concern"];
+                                $type = $_POST["type"];
+                                $student_ID = $studentnum;
+                                $appointment_ID = generateRandomNumber();
+
+                                $query = "INSERT INTO general_appointment (appointment_ID, student_ID, type, concern, description, date, time) 
+                                    VALUES('$appointment_ID', '$student_ID', '$type', '$concern', '$concern', '$date', '$time')";
+
+                                $insert_query = mysqli_query($connect_db, $query);
+                                echo "<script>window.location.href = 'student-student.php'</script>";
+                            }
+                            
+                        ?>
+                        <form name="avail-book" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                            <p>Date:</p>
+                            <input type="date" name="date" id="date" value="<?php echo $today;?>">
+                            <p>Time:</p>
+                            <select name="time" id="time">
+                                <option value="08:00:00">08:00 AM</option>
+                                <option value="10:00:00">10:00 AM</option>
+                                <option value="12:00:00">12:00 NN</option>
+                                <option value="14:00:00">02:00 PM</option>
+                                <option value="16:00:00">04:00 PM</option>
+                            </select>
+                            <input type="hidden" id="concern" name="concern" value="Avail Book">
+                            <input type="hidden" id="type" name="type" value="2">
+                            <button name="avail-book" class="default-btn">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -162,35 +220,63 @@
                     </a>
                     <div class="content">
                         <p>Schedule an appointment</p>
-                        <form action="">
+                        <?php
+
+                            include("connection.php");
+
+                            $date = $time = $appointment_ID = $student_ID = $concern = $type = $description = "";
+                            date_default_timezone_set('Asia/Manila');
+                            $today = date('Y-m-d');
+
+                            if(isset($_POST["department-con"]))
+                            {
+                                $date = $_POST["date"];
+                                $time = $_POST["time"];
+                                $appointment_ID = $_POST["appointment_ID"];
+                                $student_ID = $_POST["student_ID"];
+                                $concern = $_POST["concern"];
+                                $description = $_POST["description"];
+                                $type = $_POST["type"];
+                                $student_ID = $studentnum;
+                                $appointment_ID = generateRandomNumber();
+
+                                $query = "INSERT INTO general_appointment (appointment_ID, student_ID, type, concern, description, date, time) 
+                                    VALUES('$appointment_ID', '$student_ID', '$type', '$concern', '$description', '$date', '$time')";
+
+                                $insert_query = mysqli_query($connect_db, $query);
+                                echo "<script>window.location.href = 'student-student.php'</script>";
+                            }
+                            
+                        ?>
+                        <form name="department-con" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                             <p>Date:</p>
-                            <input type="date">
+                            <input type="date" name="date" id="date" value="<?php echo $today;?>">
                             <p>Time:</p>
-                            <select name="pay-balance" id="pay-balance">
-                                <option value="08:00">08:00 AM</option>
-                                <option value="10:00">10:00 AM</option>
-                                <option value="12:00">12:00 NN</option>
-                                <option value="14:00">02:00 PM</option>
-                                <option value="16:00">04:00 PM</option>
+                            <select name="time" id="time">
+                                <option value="08:00:00">08:00 AM</option>
+                                <option value="10:00:00">10:00 AM</option>
+                                <option value="12:00:00">12:00 NN</option>
+                                <option value="14:00:00">02:00 PM</option>
+                                <option value="16:00:00">04:00 PM</option>
                             </select>
                             <p>Department:</p>
-                            <select name="department" id="department">
-                                <option value="0">Admissions Office</option>
-                                <option value="1">Registrar's Office</option>
-                                <option value="2">Financial Aid Office</option>
-                                <option value="3">Student Affairs Office</option>
-                                <option value="4">Academic Affairs Office</option>
-                                <option value="5">Career Services Office </option>
-                                <option value="6">International Student Services Office</option>
-                                <option value="7">Office of the Dean</option>
+                            <select name="description" id="description">
+                                <option value="Admissions Office">Admissions Office</option>
+                                <option value="Registrar's Office">Registrar's Office</option>
+                                <option value="Financial Aid Office">Financial Aid Office</option>
+                                <option value="Student Affairs Office">Student Affairs Office</option>
+                                <option value="Academic Affairs Office">Academic Affairs Office</option>
+                                <option value="Career Services Office">Career Services Office </option>
+                                <option value="International Student Services Office">International Student Services Office</option>
+                                <option value="Office of the Dean">Office of the Dean</option>
                             </select>
-                            <button class="default-btn">Submit</button>
+                            <input type="hidden" id="concern" name="concern" value="Department">
+                            <input type="hidden" id="type" name="type" value="3">
+                            <button name="department-con" class="default-btn">Submit</button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
     </body>
-
-
 </html>

@@ -311,14 +311,14 @@ section div.dash-cont{
 
 table
 {
-    width: 80%;
+    width: auto;
     border: solid 1px black;
 }
 tr{
     border: solid 1px black;
 }
 th{
-    height: 40px;
+    height: 10px;
     border: solid 1px black;
 }
 
