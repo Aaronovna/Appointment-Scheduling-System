@@ -25,7 +25,7 @@
             if ($checker->num_rows==1)
             {
                 $_SESSION['user']=$email;
-                header('location: student-dash.php');
+                header('location: student/student-dash.php');
             }
             else
             {
@@ -112,11 +112,11 @@
         <title>Log In</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width , initial-scale=1.0">
-        <link rel="stylesheet"  href="style.css">
+        <link rel="stylesheet"  href="styles/global.css">
     </head>
 
     <body>
-        <h1 class="emphasis wt">Appointment Scheduling System</h1>
+        <h1 class="emphasis wt index">Appointment Scheduling System</h1>
         
         <div class="center-div">
             <p class="emphasis wt">Log In</p>

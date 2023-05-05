@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 05, 2023 at 03:33 AM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- Generation Time: May 05, 2023 at 06:21 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -42,14 +42,19 @@ CREATE TABLE `general_appointment` (
 --
 
 INSERT INTO `general_appointment` (`appointment_ID`, `student_ID`, `type`, `concern`, `description`, `date`, `time`) VALUES
-(264650, 32127091, 1, 'Pay Balance', 'Pay Balance', '3030-03-03', '16:00:00'),
-(2341652, 21016980, 3, 'Department', 'Admissions Office', '2023-05-04', '08:00:00'),
-(12196487, 21016980, 2, 'Avail Book', 'Avail Book', '2023-05-04', '08:00:00'),
-(25405993, 32127091, 1, 'Pay Balance', 'Pay Balance', '6969-09-06', '10:00:00'),
-(40194047, 21016980, 1, 'Pay Balance', 'Pay Balance', '2222-02-22', '12:00:00'),
-(60006963, 32127091, 2, 'Avail Book', 'Avail Book', '2023-05-04', '10:00:00'),
-(69707441, 21016980, 1, 'Pay Balance', 'Pay Balance', '2023-02-10', '10:00:00'),
-(78582270, 21016980, 1, 'Pay Balance', 'Pay Balance', '1111-11-11', '08:00:00');
+(935899, 21016980, 3, 'Department', 'Financial Aid Office', '2023-05-05', '08:00:00'),
+(9527160, 21016980, 3, 'Department', 'Registrars Office', '2023-05-05', '08:00:00'),
+(10298707, 21016980, 3, 'Department', 'International Student Services Office', '2023-05-05', '08:00:00'),
+(16407625, 21016980, 3, 'Department', 'Student Affairs Office', '2023-05-05', '08:00:00'),
+(16411984, 21016980, 3, 'Department', 'Admissions Office', '2023-05-05', '08:00:00'),
+(16862804, 21016980, 3, 'Department', 'Admissions Office', '2023-05-05', '08:00:00'),
+(17050980, 21016980, 3, 'Department', 'Academic Affairs Office', '2023-05-05', '08:00:00'),
+(37023355, 32127091, 2, 'Avail Book', 'Avail Book', '2023-05-05', '10:00:00'),
+(41060976, 32127091, 1, 'Pay Balance', 'Pay Balance', '2023-05-05', '10:00:00'),
+(41349530, 21016980, 1, 'Pay Balance', 'Pay Balance', '2023-05-05', '08:00:00'),
+(41454609, 21016980, 3, 'Department', 'Office of the Dean', '2023-05-05', '08:00:00'),
+(81424234, 21016980, 3, 'Department', 'Career Services Office', '2023-05-05', '08:00:00'),
+(89966165, 21016980, 2, 'Avail Book', 'Avail Book', '2023-05-05', '08:00:00');
 
 -- --------------------------------------------------------
 
@@ -65,18 +70,17 @@ CREATE TABLE `student_account` (
   `fname` varchar(20) NOT NULL,
   `lname` varchar(20) NOT NULL,
   `address` varchar(100) NOT NULL,
-  `birthdate` date NOT NULL,
-  `appt_count` int(10) NOT NULL DEFAULT 0
+  `birthdate` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `student_account`
 --
 
-INSERT INTO `student_account` (`student_ID`, `email`, `password`, `student_number`, `fname`, `lname`, `address`, `birthdate`, `appt_count`) VALUES
-(1000, 'pyre123@gmail.com', 'qwerty', 21016980, 'Pyre', 'Aron', 'Caloocan City', '2001-10-31', 0),
-(1001, 'Aaronovna@gmail.com', 'qwerty', 32127091, 'Aaronovna', 'Scitus', 'Quezon City', '2001-01-13', 0),
-(1002, 'zeng24@gmail.com', '3242zeng', 21121690, 'zeng', 'chi', 'dolmar 2', '2002-03-24', 0);
+INSERT INTO `student_account` (`student_ID`, `email`, `password`, `student_number`, `fname`, `lname`, `address`, `birthdate`) VALUES
+(1000, 'pyre123@gmail.com', 'qwerty', 21016980, 'Pyre', 'Aron', 'Caloocan City', '2001-10-31'),
+(1001, 'Aaronovna@gmail.com', 'qwerty', 32127091, 'Aaronovna', 'Scitus', 'Quezon City', '2001-01-13'),
+(1002, 'zeng24@gmail.com', '3242zeng', 21121690, 'zeng', 'chi', 'dolmar 2', '2002-03-24');
 
 --
 -- Indexes for dumped tables
