@@ -1,8 +1,5 @@
 # PHP Appointment Scheduling System
 
-<<<<<<< HEAD
-ass_db is the name of the database.
-=======
 This is a PHP project that consists of a student dashboard and appointment system. The user can login and view their personal information, make appointments, and view their upcoming appointments.
 
 ## Functionality
@@ -30,4 +27,3 @@ The user can view their upcoming appointments on the dashboard. The appointments
 The code is written in PHP, HTML, and CSS. The HTML code includes the login form, dashboard, appointment form, and table. The CSS code styles the elements of the web page, including the pop-up message. The JavaScript code includes functions that handle pop-up message functionality, page reloads, and message printing. 
 
 The code includes proper error handling and security measures such as session management and password hashing.
->>>>>>> student-dashboard
