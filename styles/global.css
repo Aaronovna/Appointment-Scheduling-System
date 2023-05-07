@@ -73,9 +73,6 @@ font-variation-settings:
 .material-symbols-outlined.md-24 { font-size: 24px; }
 .material-symbols-outlined.md-36 { font-size: 36px; }
 .material-symbols-outlined.md-48 { font-size: 48px; }
-<<<<<<< HEAD:style.css
-h1{
-=======
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -101,11 +98,10 @@ h1{
     color: black;
     margin: 0;
     padding: 0;
-    outline: 1px solid black;
+    /*outline: 1px solid black;*/
 }
 
 h1.index{
->>>>>>> 7591c4bb19941b89555ca16f7ab6e4f0f4147006:styles/global.css
     margin: 40px;
     text-align: center;
     animation: transitionIn-Y-over 0.5s;
@@ -274,131 +270,4 @@ p.success{
     color: rgb(0, 183, 255);
     font-size: 20px;
     font-weight: bold;
-<<<<<<< HEAD:style.css
-}
-
-div.user-profile{
-    height: 150px;
-    width: 150px;
-    background-color: #bbb;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-img.user-profile{
-    width: 150px;
-    height: 150px;
-}
-
-nav.def-nav{
-    width: 19%;
-    height: 99%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    background: linear-gradient(180deg, rgba(5,136,255,1) 0%, rgba(55,153,255,1) 50%, rgba(0,212,255,1) 100%);
-}
-
-button.dash-button{
-    width: 80%;
-    height: 65px;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    background-color: #ffffff;
-}
-
-button.dash-button p{
-    width: 80%;
-    text-align: center;
-}
-button.dash-button#active{
-    background-color: #d0eeff;
-}
-
-button.dash-button:hover{
-    background-color: #a0b8c7;
-    transition: 0.3s;
-}
-
-button.dash-button#active:hover{
-    background-color: #a0b8c7;
-    transition: 0.3s;
-}
-
-section.def-dash{
-    width: 79%;
-    height: 99%;
-    display: flex;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
-    overflow-y: auto;
-    backdrop-filter: blur(5px);
-    background-color: rgb(255, 255, 255,0.85);
-}
-
-section div{
-    width: 95%;
-    height: 95%;
-}
-
-table
-{
-    width: 80%;
-    border: solid 1px black;
-}
-tr{
-    border: solid 1px black;
-}
-th{
-    height: 40px;
-    border: solid 1px black;
-}
-
-
-@keyframes transitionIn-X{
-    from {
-            opacity: 0;
-            transform: translateX(-10px);
-
-    }
-
-    to {
-            opacity: 1;
-            transform: translateX(0);
-    }
-}
-
-@keyframes transitionIn-Y-over{
-    from {
-            opacity: 0;
-            transform: translateY(-10px);
-
-    }
-
-    to {
-            opacity: 1;
-            transform: translateY(0);
-    }
-}
-    
-@keyframes transitionIn-Y-bottom{
-    from {
-            opacity: 0;
-            transform: translateY(30px);
-
-    }
-
-    to {
-            opacity: 1;
-            transform: translateY(0);
-    }
-=======
->>>>>>> 7591c4bb19941b89555ca16f7ab6e4f0f4147006:styles/global.css
 }

@@ -86,7 +86,11 @@
         <section class="def-dash">
             <div class="dash-cont">
                 <div class="dash-header">
+<<<<<<< HEAD
                     <h2>HOME</h2>
+=======
+                    <h2>STUDENT</h2>
+>>>>>>> 791ff1680847a4c07be8062f1a0ff2f88a97afd8
                     <span class="dash-header">
                         <p><?php echo $today?></p>
                         <span class="material-symbols-outlined md-36">calendar_month</span>
