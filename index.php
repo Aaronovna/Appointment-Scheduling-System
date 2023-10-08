@@ -81,7 +81,7 @@
             </div>
         </div>
 
-        <p class="wt" style="margin-bottom: 5%;font-size: 28px">something@gmail.com | 09935184912</p>
+        <p class="wt" style="margin-bottom: 5%;font-size: 28px">something@email.com | 09123456789</p>
     </body>
 
 </html>
