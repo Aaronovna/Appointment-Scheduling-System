@@ -1,6 +1,6 @@
 # PHP Appointment Scheduling System
-
-This is a PHP project that consists of a student dashboard and appointment system. The user can log in and view their personal information, make appointments, and view their upcoming appointments.
+## (School Project)
+This is a PHP project that consists of a student dashboard and appointment system. The user can login and view their personal information, make appointments, and view their upcoming appointments.
 
 ## Functionality
 
