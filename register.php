@@ -6,21 +6,6 @@
 
     $email = $password = $student_number = $fname = $lname = $address = $birthdate = "";
     $emailErr = "";
-    /*
-    if($_SERVER["REQUEST_METHOD"]== "POST")
-    {
-        if(empty($_POST["email"]))
-      {
-          $emailErr = "Email is Required!";
-          //die("FILL UP ALL THE INFORMATION NEEDED");
-      }
-      else
-      {
-              $email = $_POST["email"];
-      }
-
-    }
-    */
 
     if($_SERVER["REQUEST_METHOD"] == "POST")
     {
@@ -103,4 +88,4 @@
         
     </body>
 
-<html>
+</html>

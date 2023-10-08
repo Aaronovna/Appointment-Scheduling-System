@@ -46,64 +46,6 @@
     {
         $message="You have been logged out successfully.";
     }
-
-    /*
-    $email = $password = "";
-    $emailErr = $passwordErr = "";
-
-    if($_SERVER["REQUEST_METHOD"] == "POST")
-    {
-      if(empty($_POST["email"]))
-      {
-          $emailErr = "Email is Required!";
-          //die("FILL UP ALL THE INFORMATION NEEDED");
-      }
-      else
-      {
-        $email = $_POST["email"];
-      }
-      if(empty($_POST["password"]))
-      {
-          $passwordErr = "Password is Required!";
-          //die("FILL UP ALL THE INFORMATION NEEDED");
-      }
-      else
-      {
-        $password = $_POST["password"];
-      }
-    }
-    
-    if($email && $password)
-    {
-	    include("connection.php");
-
-        $check_email = mysqli_query ($connect_db, "SELECT * FROM student_account WHERE email = '$email'");
-        $check_email_row = mysqli_num_rows($check_email);
-
-        if($check_email_row > 0)
-        {
-	        while($row = mysqli_fetch_assoc($check_email))
-            {
-                $account_password = $row ["password"];
-            
-                if($password == $account_password)
-                {
-                    echo "<script>window.location.href = 'test.php'</script>";
-                }
-                else
-                {
-                    $passwordErr = "Password is Incorrect!";
-                }
-            }
-	        
-	    }
-		else
-		{
-		  $emailErr = "Email is not registered";
-		}
-   }
-   */
-
 ?>
 
 <!DOCTYPE html>
@@ -142,4 +84,4 @@
         <p class="wt" style="margin-bottom: 5%;font-size: 28px">something@gmail.com | 09935184912</p>
     </body>
 
-<html>
+</html>
